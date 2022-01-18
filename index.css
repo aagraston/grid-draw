@@ -7,11 +7,13 @@ body * {
  }
 
 .grid-container {
+  margin-top: 50px;
   width: 960px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
+  border: 5px solid peachpuff;
 }
 
 /* the basis here or the third option needs to be caluclated dependant on number of grid points so 1 divided by number of grid points*/
@@ -30,4 +32,16 @@ body * {
   content: '';
   display: block;
   padding-top: 100%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.grid-window {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

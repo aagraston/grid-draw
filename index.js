@@ -1,5 +1,5 @@
-let gridWidth = 100;
-let gridHeight = 100;
+let gridWidth = 30;
+let gridHeight = 30;
 
 let percentageMod = (1/gridWidth) * 100;
 
