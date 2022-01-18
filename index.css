@@ -7,15 +7,29 @@ body * {
  }
 
 .grid-container {
-  border: 2px solid rgb(19, 87, 87);
-  width: 100vw;
+  border: 1px solid rgb(19, 87, 87);
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 /* the basis here or the third option needs to be caluclated dependant on number of grid points so 1 divided by number of grid points*/
 .grid-item {
-flex: 0 1 20%;
-height: 100%;
+  box-sizing: border-box;
+  flex: 0 1 20%;
+  border: 1px solid rgb(49, 46, 216);
+  transition: 0.2s;
+  background-color: white;
+}
+
+.grid-item-hovered {
+  background-color: rgb(15, 12, 51);
+}
+
+.grid-item:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
 }
