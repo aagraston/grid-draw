@@ -1,0 +1,21 @@
+body {
+ margin: 0; 
+}
+
+body * {
+  margin: 0; 
+ }
+
+.grid-container {
+  border: 2px solid rgb(19, 87, 87);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* the basis here or the third option needs to be caluclated dependant on number of grid points so 1 divided by number of grid points*/
+.grid-item {
+flex: 0 1 20%;
+height: 100%;
+}
