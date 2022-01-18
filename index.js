@@ -1,5 +1,5 @@
-let gridWidth = 30;
-let gridHeight = 30;
+let gridWidth = 40;
+let gridHeight = 40;
 
 let percentageMod = (1/gridWidth) * 100;
 
@@ -17,8 +17,20 @@ for (let i = 0; i < (gridWidth * gridHeight); i++) {
   gridContainer.appendChild(gridElement);
 }
 
+let gridElements = document.querySelectorAll('.grid-item');
+let clearButton = document.querySelector('#clearButton');
+
+clearButton.addEventListener('click', removeColor);
+
+
+function removeColor() {
+  gridElements.forEach(element => {
+    element.classList.remove('grid-item-hovered');
+  })
+}
+
+
+
 function hoverGridElement() {
   this.classList.add('grid-item-hovered');
 }
-
-console.log(gridContainer);
